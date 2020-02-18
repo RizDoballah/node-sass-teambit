@@ -1,4 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
-  background-color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #58402C;
+}
+
+header {
+  width: 100%;
+}
+
+header .header-menu {
+  height: 85px;
+  width: 80%;
+  line-height: 85px;
+  margin: 0 auto;
+  font-size: 14px;
+  border-bottom: 1px solid #58402C;
+}
+
+header .header-menu:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+header .header-menu .header-logo {
+  width: 20%;
+  float: left;
+}
+
+header .header-menu img {
+  vertical-align: middle;
+}
+
+header .header-menu .header-nav {
+  float: right;
+}
+
+header .header-menu .header-nav i.fa-bars {
+  line-height: 85px;
+  vertical-align: middle;
+  font-size: 24px;
+  display: none;
+}
+
+header .header-menu .header-nav .nav-bar {
+  text-align: right;
+  list-style: none;
+}
+
+header .header-menu .header-nav .nav-bar li {
+  display: inline-block;
+  padding-left: 35px;
+}
+
+header .header-menu .header-nav .nav-bar li a {
+  color: #58402C;
+  font-weight: bold;
+}
+
+header .header-menu .header-nav .nav-bar li a:hover {
+  color: #30488F;
+}
+
+header .header-menu .header-nav .nav-bar li a i {
+  vertical-align: text-top;
+}
+
+header .header-menu .header-nav .nav-bar li .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  vertical-align: middle;
+  line-height: 15px;
+  color: #30488F;
+  border: 1px solid #30488F;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .header-menu .header-nav .nav-bar li .btn:hover {
+  background-color: #30488F;
+  color: white;
+}
+
+header .header-menu .header-nav .nav-bar li .btn:hover svg .logo-color {
+  display: none;
+}
+
+header .header-menu .header-nav .nav-bar li .btn svg {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  header .header-menu .header-nav i.fa-bars {
+    display: block;
+  }
+
+  header .header-menu .header-nav .nav-bar {
+    display: none;
+  }
 }
 

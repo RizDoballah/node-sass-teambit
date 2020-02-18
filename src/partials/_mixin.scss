@@ -1,0 +1,31 @@
+@mixin floatLeft {
+  float: left;
+}
+@mixin floatRight {
+  float: right;
+}
+@mixin clearFix {
+  display: table;
+  content: "";
+  clear: both;
+}
+@mixin btn {
+  display: inline-block;
+  padding: 10px 15px;
+  vertical-align: middle;
+  line-height: 15px;
+  color: $fontColorBlu;
+  border: 1px solid $fontColorBlu;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  &:hover {
+    background-color:  $fontColorBlu;
+    color: white;
+    svg {
+      .logo-color {
+        display: none;
+      }
+    }
+  }
+}

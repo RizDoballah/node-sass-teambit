@@ -1,0 +1,61 @@
+header {
+  width: 100%;
+  .header-menu {
+    height: $heightHeader;
+    width: 80%;
+    line-height: $heightHeader;
+    margin: 0 auto;
+    font-size: 14px;
+    border-bottom: 1px solid $fontColor;
+    &:after {
+     @include clearFix;
+    }
+    .header-logo {
+      width: 20%;
+      @include floatLeft;
+    } img {
+      vertical-align: middle;
+    }
+    .header-nav {
+      @include floatRight;
+      i.fa-bars {
+        line-height: $heightHeader;
+        vertical-align: middle;
+        font-size: 24px;
+        display: none;
+      }
+      .nav-bar {
+        text-align: right;
+        list-style: none;
+        li {
+          display: inline-block;
+          padding-left: 35px;
+          a {
+            color: $fontColor;
+            font-weight: bold;
+            &:hover {
+              color: $fontColorBlu;
+            }
+            i {
+              vertical-align: text-top;
+            }
+          }
+          .btn {
+            @include btn;
+            svg {
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $breackpointSmall) {
+      i.fa-bars {
+        display: block;
+        }
+      .nav-bar {
+        display: none;
+        }
+      }
+    }
+  }
+}

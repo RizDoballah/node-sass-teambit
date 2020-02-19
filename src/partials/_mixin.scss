@@ -19,13 +19,4 @@
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
-  &:hover {
-    background-color:  $fontColorBlu;
-    color: white;
-    svg {
-      .logo-color {
-        display: none;
-      }
-    }
-  }
 }

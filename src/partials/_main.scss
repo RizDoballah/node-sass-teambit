@@ -1,0 +1,61 @@
+.main-container-first-section {
+  padding-top: 80px;
+  width: 100%;
+  background-color: $backgroundPink;
+  .traditional {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid $fontColor;
+    @media screen and (max-width: $breackpointSmall) {
+      width: 85%;
+    }
+    h3 {
+      width: 80%;
+      margin: auto;
+      font-size: $fontSizeH3;
+    }
+    .illustration {
+      width: 30%;
+      margin: 80px;
+      @media screen and (max-width: $breackpointSmall) {
+        width: 50%;
+      }
+    }
+    .cols {
+      &:after {
+        @include clearFix;
+      }
+      .col {
+        @include floatLeft;
+        width: 30%;
+        margin-top: 80px;
+        margin-left: 20px;
+        img {
+          height: 90px;
+        }
+        P {
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+      @media screen and (max-width: $breackpointSmall) {
+        .col {
+          width: 100%;
+          img {
+            height: 110px;
+          }
+        }
+
+
+      }
+    }
+  }
+  .solution {
+    border-bottom: none;
+    h3 {
+      margin-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}

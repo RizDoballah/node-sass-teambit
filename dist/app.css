@@ -87,6 +87,7 @@ header .header-menu .header-nav .nav-bar li .btn {
   border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
+  transition: background-color 1s ease;
 }
 
 header .header-menu .header-nav .nav-bar li .btn:hover {
@@ -151,9 +152,10 @@ header .jumbo-text .btn-blu {
   font-weight: bold;
   margin-bottom: 20px;
   margin-right: 35px;
-  background-color: #30488F;
   color: white;
   font-weight: normal;
+  background-color: #30488F;
+  transition: background-color 1s ease;
 }
 
 header .jumbo-text .btn-blu .google {
@@ -214,5 +216,82 @@ header .jumbo-img img {
     width: 60%;
     margin-top: 20px;
   }
+}
+
+.main-container-first-section {
+  padding-top: 80px;
+  width: 100%;
+  background-color: #FFE7D2;
+}
+
+.main-container-first-section .traditional {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid #58402C;
+}
+
+@media screen and (max-width: 767px) {
+  .main-container-first-section .traditional {
+    width: 85%;
+  }
+}
+
+.main-container-first-section .traditional h3 {
+  width: 80%;
+  margin: auto;
+  font-size: 28px;
+}
+
+.main-container-first-section .traditional .illustration {
+  width: 30%;
+  margin: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-container-first-section .traditional .illustration {
+    width: 50%;
+  }
+}
+
+.main-container-first-section .traditional .cols:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.main-container-first-section .traditional .cols .col {
+  float: left;
+  width: 30%;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+.main-container-first-section .traditional .cols .col img {
+  height: 90px;
+}
+
+.main-container-first-section .traditional .cols .col P {
+  font-size: 16px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-container-first-section .traditional .cols .col {
+    width: 100%;
+  }
+
+  .main-container-first-section .traditional .cols .col img {
+    height: 110px;
+  }
+}
+
+.main-container-first-section .solution {
+  border-bottom: none;
+}
+
+.main-container-first-section .solution h3 {
+  margin-top: 60px;
+  padding-bottom: 60px;
 }
 

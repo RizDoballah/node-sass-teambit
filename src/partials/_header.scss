@@ -44,6 +44,7 @@ header {
           }
           .btn {
             @include btn;
+            transition: background-color 1s ease;
             &:hover {
               background-color:  $fontColorBlu;
               color: white;
@@ -91,9 +92,11 @@ header {
         @include btn;
         margin-bottom: 20px;
         margin-right: 35px;
-        background-color: $fontColorBlu;
         color: white;
         font-weight: normal;
+        background-color: $fontColorBlu;
+        transition: background-color 1s ease;
+
         .google {
           margin-right: 5px;
           margin-bottom: 3px;
